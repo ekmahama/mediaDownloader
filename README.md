@@ -19,4 +19,11 @@ To run this app, follow below steps
  <li>youtube-dl==2021.6.6</li>
 </ul>
 <h2>Screenshots</h2>
+<p>Step 1</p>
 <img src="screenshots/step1.png" alt="step1" width="" height="">
+<p>Step 2</p>
+<img src="screenshots/step2.png" alt="step1" width="" height="">
+<p>Step 3</p>
+<img src="screenshots/step2.png" alt="step1" width="" height="">
+<p>Downloaded file</p>
+<img src="screenshots/results.png" alt="step1" width="" height="">
