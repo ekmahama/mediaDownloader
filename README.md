@@ -6,7 +6,7 @@
 <h2>Quick Start</h2>
 To run this app, follow below steps
 <ul>
- <li>Clone this repository : git clone https://github.com/ekmahama/mediaDownloader.git</li>
+ <li>Clone this repository : <pre> git clone https://github.com/ekmahama/mediaDownloader.git </pre></li>
  <li><pre>cd mediaDownloader </pre></li>
  <li><pre>pip install -r requirements.txt</pre> </li>
  <li><pre>python myapp.py</pre></li>
