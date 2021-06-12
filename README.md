@@ -19,4 +19,4 @@ To run this app, follow below steps
  <li>youtube-dl==2021.6.6</li>
 </ul>
 <h2>Screenshots</h2>
-<img src="screenshots/step1" alt="Girl in a jacket" width="500" height="600">
+<img src="screenshots/step1.png" alt="step1" width="500" height="600">
