@@ -19,7 +19,7 @@ To run this app, follow below steps
  <li>youtube-dl==2021.6.6</li>
 </ul>
 <h2>Screenshots</h2>
-<p>Step 1: Rum my app as described in Qiuck start</p>
+<p>Step 1: Run my app as described in Qiuck start</p>
 <img src="screenshots/step1.png" alt="step1" width="800" height="400">
 <p>Step 2: Provide path of media to download and select save location</p>
 <img src="screenshots/step2.png" alt="step1" width="800" height="400">
