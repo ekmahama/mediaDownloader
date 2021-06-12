@@ -7,9 +7,9 @@
 To run this app, follow below steps
 <ul>
  <li>Clone this repository : git clone https://github.com/ekmahama/mediaDownloader.git</li>
- <li>cd mediaDownloader </li>
- <li>pip install -r requirements.txt </li>
- <li>python myapp.py</li>
+ <li><pre>cd mediaDownloader </pre></li>
+ <li><pre>pip install -r requirements.txt</pre> </li>
+ <li><pre>python myapp.py</pre></li>
  <li> After the above command, awindow will pop up. tProvide url to media you want to download, select path to save the media </li> 
 </ul>
 <h2>Package dependencies</h2>
