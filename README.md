@@ -13,4 +13,9 @@ To run this app, follow below steps
  <li> After the above command, awindow will pop up. tProvide url to media you want to download, select path to save the media </li> 
 </ul>
 <h2>Package dependencies</h2>
+<ul>
+ <li>PySide2==5.15.2</li>
+ <li>shiboken2==5.15.2</li>
+ <li>youtube-dl==2021.6.6</li>
+</ul>
 <h2>Screenshots</h2>
