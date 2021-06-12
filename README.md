@@ -20,10 +20,10 @@ To run this app, follow below steps
 </ul>
 <h2>Screenshots</h2>
 <p>Step 1</p>
-<img src="screenshots/step1.png" alt="step1" width="400" height="400">
+<img src="screenshots/step1.png" alt="step1" width="800" height="400">
 <p>Step 2</p>
-<img src="screenshots/step2.png" alt="step1" width="500" height="500">
+<img src="screenshots/step2.png" alt="step1" width="800" height="400">
 <p>Step 3</p>
-<img src="screenshots/step2.png" alt="step1" width="300" height="300">
+<img src="screenshots/step2.png" alt="step1" width="800" height="400">
 <p>Downloaded file</p>
-<img src="screenshots/results.png" alt="step1" width="350" height="350">
+<img src="screenshots/results.png" alt="step1" width="800" height="400">
