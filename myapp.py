@@ -74,7 +74,7 @@ class MainWidget(QWidget):
         # Widget for locatin label
         self.location_label = QLabel(self)
         self.location_label.setText('Location:')
-        self.location_input = QLabel(self)
+        self.location_input = QLineEdit(self)
 
         # Widget for browse & download button
         self.browse_btn = QPushButton("Browse")
@@ -90,7 +90,7 @@ class MainWidget(QWidget):
         grid.addWidget(self.location_label, 1, 0)
         grid.addWidget(self.location_input, 1, 1)
 
-        grid.addWidget(self.browse_btn, 1, 1)
+        grid.addWidget(self.browse_btn, 1, 2)
         grid.addWidget(self.download_btn, 2, 0, 1, 3)
 
         # Table widget
