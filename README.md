@@ -1,6 +1,6 @@
 <h1>Media Downloader</h1>
 <p>
- Media downloader is an app created with python to help download media files from the internet. 
+ Media downloader is an app created with python to help download media files from the internet. The frontend of the is application was created with Qt framework, a free and open-source widget library for creating GUIs.
 </p>
 
 <h2>Quick Start</h2>
@@ -10,7 +10,7 @@ To run this app, follow below steps
  <li><pre>cd mediaDownloader </pre></li>
  <li><pre>pip install -r requirements.txt</pre> </li>
  <li><pre>python myapp.py</pre></li>
- <li> After the above command, awindow will pop up. tProvide url to media you want to download, select path to save the media </li> 
+ <li> After the above command, a window will pop up. Provide url to media you want to download, select path to save the media </li> 
 </ul>
 <h2>Package dependencies</h2>
 <ul>
