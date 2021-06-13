@@ -80,7 +80,7 @@ class MainWidget(QWidget):
         self.browse_btn = QPushButton("Browse")
         self.download_btn = QPushButton("Download")
 
-        # widgets on a grid downloaded times
+        # Place widgets on a grid 
         # input to addWidet(widget, row, col, row-span, col-span, alignment)
         grid = QGridLayout()
         grid.setSpacing(10)
@@ -96,15 +96,15 @@ class MainWidget(QWidget):
         # Table widget
         self.tableWidget = QTableWidget()
         self.tableWidget.setColumnCount(2)
-        self.tableWidget.verticalHeader().setVisible(False)
-
-        self.tableWidget.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch)
-        self.tableWidget.setColumnWidth(1, 140)
-        self.tableWidget.setShowGrid(False)
-        self.tableWidget.setSelectionBehavior(QTableView.SelectRows)
-        self.tableWidget.setHorizontalHeaderLabels(["name", "Downloaded"])
+        self.tableWidget.verticalHeader().setVisible(False) # hide row labels
         
-          # use vertical layout for logo, grid
+        self.tableWidget.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch) # fit the remaining space after col 2 take its space
+        self.tableWidget.setColumnWidth(1, 140)
+        self.tableWidget.setShowGrid(False)  # done show gridline
+        self.tableWidget.setSelectionBehavior(QTableView.SelectRows)  # select entire row when one cell is selected
+        self.tableWidget.setHorizontalHeaderLabels(["Filename", "Downloaded"])
+        
+          # use vertical layout for logo, grid and make as default layout
         vbox = QVBoxLayout()
         vbox.addLayout(logoBox)
         vbox.addLayout(grid)
