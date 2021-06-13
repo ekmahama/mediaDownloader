@@ -50,31 +50,37 @@ class MainWidget(QWidget):
         self.setup_connections()
 
     def initUI(self):
-        # Layout for the the logo
+        """
+        This method creates the widget of interest
+        """
+        # Widget for logo (if any)
         self.logo_label = QLabel(self)
         logo = QtGui.QPixmap("logo.jpg")
         self.logo_label.setPixmap(logo)
-
+        
+        # use horizontal layout for the logo
         logoBox = QHBoxLayout()
         logoBox.addStretch(1)
         logoBox.addWidget(self.logo_label)
         logoBox.addStretch(1)
 
-        # Download url label
+        # Widget for for url label
         self.url_label = QLabel(self)
+        
+        #Widget for for url input
         self.url_label.setText('Url:')
         self.url_input = QLineEdit(self)
 
-        # Save location
+        # Widget for locatin label
         self.location_label = QLabel(self)
         self.location_label.setText('Location:')
         self.location_input = QLabel(self)
 
-        # Brow botton
+        # Widget for browse & download button
         self.browse_btn = QPushButton("Browse")
         self.download_btn = QPushButton("Download")
 
-        # Laying widgets on grid
+        # widgets on a grid downloaded times
         # input to addWidet(widget, row, col, row-span, col-span, alignment)
         grid = QGridLayout()
         grid.setSpacing(10)
@@ -97,7 +103,8 @@ class MainWidget(QWidget):
         self.tableWidget.setShowGrid(False)
         self.tableWidget.setSelectionBehavior(QTableView.SelectRows)
         self.tableWidget.setHorizontalHeaderLabels(["name", "Downloaded"])
-
+        
+          # use vertical layout for logo, grid
         vbox = QVBoxLayout()
         vbox.addLayout(logoBox)
         vbox.addLayout(grid)
@@ -142,7 +149,7 @@ class MainWindow(QMainWindow):
 
 
 if __name__ == '__main__':
-    app = QApplication(sys.argv)
+    app = QApplication(sys.argv) # this run our app
     m_window = MainWindow()
     m_window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec_()) # Starts the main applicatio loop (some widget do neet it though)
