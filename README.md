@@ -24,6 +24,6 @@ To run this app, follow below steps
 <p>Step 2: Provide path of media to download and select save location</p>
 <img src="screenshots/step2.png" alt="step1" width="800" height="400">
 <p>Step 3: Click on the download button</p>
-<img src="screenshots/step2.png" alt="step1" width="800" height="400">
+<img src="screenshots/step3.png" alt="step1" width="800" height="400">
 <p>Downloaded file</p>
-<img src="screenshots/results.png" alt="step1" width="800" height="400">
+<img src="screenshots/step4.png" alt="step1" width="800" height="400">
