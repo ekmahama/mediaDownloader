@@ -1,10 +1,10 @@
 <h1>Media Downloader</h1>
 <p>
- Media downloader is an app created with Python 3 to help download media files from youtube. The frontend of the is application was created with Qt framework, a free and open-source widget library for creating GUIs. To download a media file, you input the url of file of intereset, the application then downloads it for you.
+ Media downloader is an application created with Python 3 to help download media files from youtube. The frontend of the is application was created with Qt framework, a free and open-source widget library for creating GUIs. To download a media file, you input the url of file of intereset, the application then downloads it for you.
 </p>
 
 <h2>Quick Start</h2>
-To run this app, follow below steps
+To run this app, follow below steps. NB you need Python 3 to run this application
 <ul>
  <li>Clone this repository : <pre> git clone https://github.com/ekmahama/mediaDownloader.git </pre></li>
  <li><pre>cd mediaDownloader </pre></li>
