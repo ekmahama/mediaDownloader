@@ -10,6 +10,8 @@ from PySide2.QtWidgets import (QWidget, QPushButton, QFileDialog,
 
 
 class MyLogger():
+    """This class is required for youtube_dl per documentation """
+
     def debug(self, msg):
         print(msg)
 
@@ -21,6 +23,7 @@ class MyLogger():
 
 
 class DownloadThread(QThread):
+    """A thread that will execute the download """
     data_downloaded = Signal()
 
     def __init__(self, directory, url, row_position):
@@ -57,7 +60,7 @@ class MainWidget(QWidget):
         self.logo_label = QLabel(self)
         logo = QtGui.QPixmap("logo.jpg")
         self.logo_label.setPixmap(logo)
-        
+
         # use horizontal layout for the logo
         logoBox = QHBoxLayout()
         logoBox.addStretch(1)
@@ -66,8 +69,8 @@ class MainWidget(QWidget):
 
         # Widget for for url label
         self.url_label = QLabel(self)
-        
-        #Widget for for url input
+
+        # Widget for for url input
         self.url_label.setText('Url:')
         self.url_input = QLineEdit(self)
 
@@ -80,7 +83,7 @@ class MainWidget(QWidget):
         self.browse_btn = QPushButton("Browse")
         self.download_btn = QPushButton("Download")
 
-        # Place widgets on a grid 
+        # Place widgets on a grid
         # input to addWidet(widget, row, col, row-span, col-span, alignment)
         grid = QGridLayout()
         grid.setSpacing(10)
@@ -96,15 +99,17 @@ class MainWidget(QWidget):
         # Table widget
         self.tableWidget = QTableWidget()
         self.tableWidget.setColumnCount(2)
-        self.tableWidget.verticalHeader().setVisible(False) # hide row labels
-        
-        self.tableWidget.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch) # fit the remaining space after col 2 take its space
+        self.tableWidget.verticalHeader().setVisible(False)  # hide row labels
+
+        self.tableWidget.horizontalHeader().setSectionResizeMode(
+            0, QHeaderView.Stretch)  # fit the remaining space after col 2 take its space
         self.tableWidget.setColumnWidth(1, 140)
         self.tableWidget.setShowGrid(False)  # done show gridline
-        self.tableWidget.setSelectionBehavior(QTableView.SelectRows)  # select entire row when one cell is selected
+        # select entire row when one cell is selected
+        self.tableWidget.setSelectionBehavior(QTableView.SelectRows)
         self.tableWidget.setHorizontalHeaderLabels(["Filename", "Downloaded"])
-        
-          # use vertical layout for logo, grid and make as default layout
+
+        # use vertical layout for logo, grid and make as default layout
         vbox = QVBoxLayout()
         vbox.addLayout(logoBox)
         vbox.addLayout(grid)
@@ -149,7 +154,8 @@ class MainWindow(QMainWindow):
 
 
 if __name__ == '__main__':
-    app = QApplication(sys.argv) # this run our app
+    app = QApplication(sys.argv)  # this run our app
     m_window = MainWindow()
     m_window.show()
-    sys.exit(app.exec_()) # Starts the main applicatio loop (some widget do neet it though)
+    # Starts the main applicatio loop (some widget do neet it though)
+    sys.exit(app.exec_())
